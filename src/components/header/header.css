@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-card{
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.header-text {
+ padding: 10px;
+
+}
+.right {
+    justify-content: space-around;
+    gap: 8px;
+}

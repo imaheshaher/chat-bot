@@ -1,0 +1,35 @@
+.recent-letter{
+    margin-top: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow:  4px 4px 8px 4px rgba(0,0,0,0.2);
+    padding: 8px;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 48px); /* Flexbox item with flexible width, 3 per row */
+    min-width: 280px; /* Ensures cards don't get too small */
+}
+.card-content {
+    display: flex;
+    gap: 16px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.header-text{
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 16px); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row on small screens */
+    }
+}
