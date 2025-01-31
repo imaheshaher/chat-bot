@@ -20,7 +20,7 @@ const Chatbot = () => {
   };
   const fetchData = async (user_id,query) => {
     // Replace with your API URL
-    const apiUrl = 'https://169f-2401-4900-8fcb-ba86-9d43-5c86-9e12-506a.ngrok-free.app/chat';
+    const apiUrl = 'http://192.168.137.1:8000/chat';
     
     // Sending query parameters in the URL
     const res = await axios.get(apiUrl, {
